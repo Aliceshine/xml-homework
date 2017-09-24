@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Library SYSTEM "Library.dtd">
+<Library>
+	<Book BookId="1">
+		<Title>xml技术应用</Title>
+		<Author>贾素玲</Author>
+		<Price>35元</Price>
+		<Publisher>清华大学出版社</Publisher>
+		<Cost>10元</Cost>
+	</Book>
+	<Member>
+		<Name>
+			<FirstName>first</FirstName>
+			<MiddleName>middle</MiddleName>
+			<LastName>last</LastName>
+		</Name>
+		<Address>
+			<City>荆州</City>
+			<Stree>幸福街</Stree>
+			<HouseNumber>18号</HouseNumber>
+		</Address>
+	</Member>
+</Library>
