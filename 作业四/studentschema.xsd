@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.abc.com"
+	xmlns="http://www.abc.com" elementFormDefault="qualified">
+	
+	<xs:element name="学生名册">  
+	   <xs:complexType>  
+			<xs:sequence>  
+				 <xs:element ref="学生" maxOccurs="unbounded"/>  
+			</xs:sequence>  
+		</xs:complexType>  
+    </xs:element>  
+	<xs:element name="学生">  
+		<xs:complexType>  
+			<xs:sequence>  
+				<xs:element ref="姓名"/>  
+				<xs:element ref="性别"/>  
+				<xs:element ref="年龄"/>  
+			</xs:sequence>  
+		    <xs:attribute name="学号" use="required" type="xs:int"/>  
+		</xs:complexType>  
+    </xs:element>
+	<xs:element name="姓名" type="xs:string"/>  
+           <xs:element name="性别">  
+                 <xs:simpleType>  
+                      <xs:restriction base="xs:string">  
+                            <xs:enumeration value="女"/>  
+                            <xs:enumeration value="男"/>  
+                      </xs:restriction>  
+                 </xs:simpleType>  
+           </xs:element>  
+           <xs:element name="年龄" type="xs:int"/>  
+</xsd:schema>
+
